@@ -1,0 +1,72 @@
+.homeContainer {
+  background-image: url('../../../public/Images/landingback.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 200vh;
+  margin: 0;
+  padding-top: 40px;
+}
+
+.homeContainer select {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  background-color: #f8f8f8;
+  color: black;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.homeContainer select:focus {
+  outline: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.homeContainer .filterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.homeContainer .filterDropdown {
+  margin-right: 10px;
+}
+
+.homeContainer .sortDropdown {
+  margin-left: 10px;
+}
+
+.homeContainer .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.homeContainer .pagination button {
+  margin: 0 5px;
+  padding: 8px;
+  background-color: #f8f8f8;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.homeContainer .pagination button:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.homeContainer .pagination button.active {
+  background-color: #428bca;
+  color: white;
+}

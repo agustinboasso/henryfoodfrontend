@@ -1,0 +1,43 @@
+.navBar {
+  background-color: #f4bc0c; /* Cambio de gris a amarillo */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navBar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navBar a:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navBar a.active {
+  background-color: #428bca;
+  color: white;
+}
+
+.navBar .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navBar .logo:hover {
+  text-decoration: none;
+}
+
+.navBar .searchBar {
+  flex-grow: 1;
+  margin: 0 10px;
+}

@@ -1,0 +1,31 @@
+.footer {
+    background-color: #f4bc0c;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer p {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .footer p.active {
+    background-color: #428bca;
+    color: white;
+  }
+  
+  .footer .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .footer .logo:hover {
+    text-decoration: none;
+  }
