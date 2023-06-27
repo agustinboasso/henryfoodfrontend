@@ -1,16 +1,12 @@
 import styles from './LandingPage.module.css';
 import { NavLink } from 'react-router-dom';
+import logo from '../../assets/images/logofood.png'
 
 const LandingPage = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>
-        WELCOME TO HENRY FOOD!
-      </h1>
-      <p className={styles.subheading}>
-        A proyect for HENRY bootcamp.
-      </p>
       
+      <img src={logo} alt="logofood" className={styles.logo} />
       <NavLink to='/home'>
         <div className={styles.buttoncontainer}>
           <button className={`${styles.button} ${styles.startButton}`}>
