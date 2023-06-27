@@ -76,7 +76,7 @@ export const getRecipeId = (id) => {
   
   return async function (dispatch) {
     try {
-      const response = await axios.get(`/recipes/${id}`);
+      const response = await axios.get(`https://henryfoodbackend-production.up.railway.app/recipes/${id}`);
       const recipe = response.data;
       
       dispatch({ type: GET_RECIPEID, payload: recipe });
