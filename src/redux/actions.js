@@ -16,7 +16,7 @@ export const FILTER_BY_DIET = 'FILTER_BY_DIET';
 //trae todas las recetas
 export const getRecipes = () => {
     return async function (dispatch){
-          const apiData = await axios.get(`/recipes`)
+          const apiData = await axios.get(`https://henryfoodbackend-production.up.railway.app/recipes`)
           const recipes = apiData.data;
         //const recipes = modificatedResults
 
@@ -29,7 +29,7 @@ export const addRecipe = (recipe) => {
   console.log(recipe)
   return async function (dispatch) {
     try {
-      const response = await axios.post('/recipes', recipe);
+      const response = await axios.post('https://henryfoodbackend-production.up.railway.app/recipes', recipe);
       dispatch({ type: ADD_RECIPE, payload: response.data });
       
     } catch (error) {
@@ -42,7 +42,7 @@ export const addRecipe = (recipe) => {
 export const getDiets = () => {
   return async function (dispatch) {
     try {
-      const response = await axios.get('/diets');
+      const response = await axios.get('https://henryfoodbackend-production.up.railway.app/diets');
       dispatch({ type: GET_DIETS, payload: response.data });
     } catch (error) {
       console.error(error);
@@ -54,7 +54,7 @@ export const getDiets = () => {
 export const searchRecipes = (name) => {
   return async (dispatch) => {
     try {
-      const { data } = await axios.get(`/recipes?name=${name}`);
+      const { data } = await axios.get(`https://henryfoodbackend-production.up.railway.app/recipes?name=${name}`);
       
       if (data.length > 0) {
         dispatch({
